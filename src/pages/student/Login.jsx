@@ -20,7 +20,7 @@ const Login = () => {
             password:passwordRef.current.value
         }
         console.log(obj)
-        let res= await axios.post('http://localhost:8080/users/login',obj);
+        let res= await axios.post('https://jobbackend-5yqy.onrender.com/users/login',obj);
         let data=res.data
         console.log(data)
         if(data.success){
